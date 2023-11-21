@@ -52,19 +52,19 @@ function generateRandomPassword() {
 }
 
 // Range Slider
-document.getElementById('passwordLength').addEventListener('input', function(e) {
+document.getElementById('passwordLength').addEventListener('input', function (e) {
     document.getElementById('rangeValue').innerText = e.target.value;
-  });
+});
 
 
 // Generate Password Button
-document.getElementById("generatePassword").addEventListener("click", function(event){
+document.getElementById("generatePassword").addEventListener("click", function (event) {
     event.preventDefault();
     generateRandomPassword();
 });
 
 // Copy Password to Clipboard
-document.getElementById("copyPassword").addEventListener("click", function(event){
+document.getElementById("copyPassword").addEventListener("click", function (event) {
     event.preventDefault();
     newPassword.select();
     document.execCommand("copy");
