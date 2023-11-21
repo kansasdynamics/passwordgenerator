@@ -174,17 +174,21 @@ input[type=range]::-moz-range-thumb {
 p.kdIcon {
     transition: all 0.3s;
     text-align: center;
-    animation: bounce 0.7s infinite alternate;
+    animation: bounceAndRotate 2.7s infinite;
 }
+
 #kdIcon {
     width: 50px;
 }
 
-@keyframes bounce {
+@keyframes bounceAndRotate {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) rotateY(0);
+    }
+    50% {
+        transform: translateY(-15px) rotateY(180deg);
     }
     100% {
-        transform: translateY(-15px);
+        transform: translateY(0) rotateY(360deg);
     }
 }
