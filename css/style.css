@@ -170,3 +170,21 @@ input[type=range]::-moz-range-thumb {
     text-decoration: none !important;
     color: #2b3990;
 }
+
+p.kdIcon {
+    transition: all 0.3s;
+    text-align: center;
+    animation: bounce 0.7s infinite alternate;
+}
+#kdIcon {
+    width: 50px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
