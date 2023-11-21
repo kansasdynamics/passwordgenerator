@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Password Generator</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900%7CRubik:100,200,300,400,500,600,700,800,900%7CPoppins:100,200,300,400,500,600,700,800,900%7CNoto+Sans:100,200,300,400,500,600,700,800,900%7CUbuntu:100,200,300,400,500,600,700,800,900%7CNunito+Sans:100,200,300,400,500,600,700,800,900&#038;subset=latin,latin-ext' type='text/css' media='all' rel='stylesheet' />
+</head>
+
+<body class="bg-body-tertiary">
+  <div class="container">
+    <main>
+      <div class="row py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="img/kansasdynamics_logo_color.png" alt="Kansas Dynamics logo">
+        <h2 id="headline">Password Generator</h2>
+        <p class="lead">Randomly generate a secure password</p>
+      </div>
+      <div class="row g-5">
+        <div class="col">
+          <form class="" novalidate>
+            <div class="col-12">
+              <label class="toggle container-fluid">
+                <input class="toggle-checkbox" type="checkbox" id="uppercase" checked>
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Uppercase Letters ( A-Z )</span>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="toggle container-fluid">
+                <input class="toggle-checkbox" type="checkbox" id="lowercase">
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Lowercase Letters ( a-z )</span>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="toggle container-fluid">
+                <input class="toggle-checkbox" type="checkbox" id="numbers" checked>
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Numbers ( 0-9 )</span>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="toggle container-fluid">
+                <input class="toggle-checkbox" type="checkbox" id="symbols">
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Symbols ( !@#$% )</span>
+              </label>
+            </div>
+
+            <div class="col-12">
+              <label class="toggle container-fluid">
+                <input type="range" min="5" max="25" step="1" class="form-range" id="passwordLength">
+                <span class="toggle-label">Password Length ( <span id="rangeValue">15</span> )</span>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="toggle container-fluid">
+                <button class="w-100 btn btn-primary btn-sm" type="submit" id="generatePassword">Generate Password</button>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="toggle container-fluid">
+                <div class="input-group">
+                  <div class="input-group-text" id="copyPassword">Copy</div>
+                  <input type="text" class="form-control" placeholder="New Password" aria-label="Input group example" aria-describedby="copyPassword" id="newPassword">
+                </div>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+      <p class="mb-1">&copy; 2023 Kansas Dynamics</p>
+      <ul class="list-inline footer-menu">
+        <li class="list-inline-item"><a href="https://kansasdynamics.com/terms-and-conditions/" target="_blank">Terms</a></li>
+        <li class="list-inline-item"><a href="https://kansasdynamics.com/privacy-policy/" target="_blank">Privacy</a></li>
+        <li class="list-inline-item"><a href="https://kansasdynamics.com/cookies-policy/" target="_blank">Cookies</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
